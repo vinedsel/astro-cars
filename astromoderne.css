@@ -1,0 +1,26 @@
+
+/*header space*/
+
+.container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: #222629;
+  justify-content: center;
+}
+
+.box1 {
+  position: relative;
+  display: block;
+  background-color: #222629;
+  width: 100%;
+
+}
+
+/*navigation bar*/
+
+li {
+  display: inline-flex;
+  padding-right: 20px;
+  padding-top: 30px;
+}
