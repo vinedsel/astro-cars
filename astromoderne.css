@@ -1,4 +1,3 @@
-
 /*header space*/
 
 .container {
@@ -9,18 +8,41 @@
   justify-content: center;
 }
 
-.box1 {
-  position: relative;
-  display: block;
-  background-color: #222629;
-  width: 100%;
+/*navigation bar*/
+
+.navbar {
 
 }
 
-/*navigation bar*/
+.navlink {
+  color: #88BDBC;
+}
 
 li {
+  position: relative;
   display: inline-flex;
   padding-right: 20px;
   padding-top: 30px;
+}
+
+
+/*background container*/
+
+.container2 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  background-color: #474B4F;
+}
+
+/*foreground container*/
+
+.box2 {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 65%;
+  height: inherit;
+  background-color: #88BDBC;
 }
