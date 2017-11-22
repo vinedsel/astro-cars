@@ -66,9 +66,8 @@ li {
   text-align: center;
 }
 
-div nav ul li>a {
-  text-decoration: none;
-}
+
+/*navigation buttons*/
 
 .home>a:hover {
   color: #222629;
