@@ -1,28 +1,97 @@
+
+
 /*header space*/
 
 .container {
   position: relative;
   display: flex;
+  justify-content: center;
   width: 100%;
   background-color: #222629;
-  justify-content: center;
 }
+
 
 /*navigation bar*/
 
 .navbar {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-around;
+  justify-content: center;
+  height: 65px;
+  width: 100%;
+  border-color: #88BDBC;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  padding-left: -20px;
+  padding-right: 15px;
 
 }
 
 .navlink {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
   color: #88BDBC;
+  background-color: #222629;
+  padding-top: 10px;
+
+  height: 40px;
+  width: 130px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.navlink.active {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #88BDBC;
+  color: #222629;
+  text-decoration: none;
+}
+
+ul {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
 }
 
 li {
   position: relative;
   display: inline-flex;
+  padding-top: 20px;
   padding-right: 20px;
-  padding-top: 30px;
+  text-align: center;
+}
+
+div nav ul li>a {
+  text-decoration: none;
+}
+
+.home>a:hover {
+  color: #222629;
+  background-color: #474B4F;
+  text-decoration: none;
+}
+
+.inventory>a:hover {
+  color: #222629;
+  background-color: #474B4F;
+  text-decoration: none;
+}
+
+.contact>a:hover {
+  color: #222629;
+  background-color: #474B4F;
+  text-decoration: none;
+}
+
+.about>a:hover {
+  color: #222629;
+  background-color: #474B4F;
+  text-decoration: none;
 }
 
 
@@ -36,6 +105,7 @@ li {
   background-color: #474B4F;
 }
 
+
 /*foreground container*/
 
 .box2 {
@@ -45,4 +115,16 @@ li {
   width: 65%;
   height: inherit;
   background-color: #88BDBC;
+}
+
+
+/*footer*/
+
+.container3 {
+  position: relative;
+  display: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  background-color: #222629;
 }
