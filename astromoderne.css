@@ -123,14 +123,33 @@ li {
 /*movie container*/
 
 #waterengine {
+  font-family: serif;
+  margin-bottom: 3px;
+}
 
+#line {
+  margin-bottom: 20px;
+  margin-bottom: 27px;
+}
+
+#line2 {
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+#w-enginetext {
+  position: relative;
+  display: flex;
+  padding-top: 20px;
+  width: 560px;
+  text-align: left;
 }
 
 .movie {
   position: relative;
   display: inline-block;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 100px;
   text-align: center;
 }
 
