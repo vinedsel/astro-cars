@@ -144,7 +144,6 @@ li {
   text-align: center;
 }
 
-
 /*About*/
 
 #about {
@@ -152,6 +151,35 @@ li {
   display: flex;
   width: 560px;
   text-align: left;
+}
+
+
+/*Contact*/
+
+.conContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.contactBoxA {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  padding-right: 180px;
+}
+
+.contactBoxB {
+  position: relative;
+  display: inline-block;
+  text-align: right;
+}
+
+#legend {
+  text-decoration: none;
+  text-align: left;
+  font-family: serif;
+  font-size: 24px;
 }
 
 
