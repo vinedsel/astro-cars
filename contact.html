@@ -49,8 +49,8 @@
 
   <!-- 2/3 Main Body Context -->
 
-  <div class="container2-2">
-    <div class="longerBox2">
+  <div class="container2">
+    <div class="box2">
 
       <div class="subContainer">
         <h1 id="w-engine">Contact</h1>
@@ -103,24 +103,23 @@
               <br> <a href="mailto:ehaskell@astro-moderne.com">ehaskell@astro-moderne.com</a>
             </div>
 
-            <div class="containerHeck">
-              <div class="contactBoxD">
-                <legend id="legend">Enter your questions or comments</legend>
+            <div class="contactBoxD">
+              <legend id="legend">Enter your questions or comments</legend>
+              <p>
+                <label for="fullname"></label><input type="text" name="fullname" id="fullname" placeholder="Full Name">
+              </p>
+              <p>
+                <label for="email"></label><input type="email" name="email" id="email" placeholder="Email">
+              </p>
+              <p><label for="quest"></label><br>
+                <textarea name="quest" id="question" cols="50" rows="7" maxlength="500" placeholder="Questions or comments?"></textarea></p>
+              <div class="col" id="sendbutton">
                 <p>
-                  <label for="fullname"></label><input type="text" name="fullname" id="fullname" placeholder="Full Name">
+                  <button id="btnSendInfo" class="submitbutton">Send Info</button>
                 </p>
-                <p>
-                  <label for="email"></label><input type="email" name="email" id="email" placeholder="Email">
-                </p>
-                <p><label for="quest"></label><br>
-                  <textarea name="quest" id="question" cols="50" rows="7" maxlength="500" placeholder="Questions or comments?"></textarea></p>
-                <div class="col" id="sendbutton">
-                  <p>
-                    <button id="btnSendInfo" class="submitbutton">Send Info</button>
-                  </p>
-                </div>
               </div>
             </div>
+
           </div>
         </div>
 
