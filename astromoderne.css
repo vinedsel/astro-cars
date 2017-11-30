@@ -158,14 +158,6 @@ li {
 
 /*Contact*/
 
-/*.conContainer {
-  position: relative;
-  display: block;
-  justify-content: center;
-  margin-left: 15%;
-  margin-right: 15%;
-}*/
-
 .containerUp {
   position: relative;
   display: flex;
@@ -178,19 +170,31 @@ li {
 
 .contactBoxA {
   position: relative;
-  display: flex;
+  display: block;
   justify-content: flex-start;
   text-align: left;
   flex-basis: 170px;
   flex-grow: 10;
 }
 
+.boxA {
+  position: relative;
+  display: block;
+  text-align: left;
+}
+
 .contactBoxB {
   position: relative;
-  display: flex;
+  display: block;
   justify-content: flex-end;
   text-align: right;
   flex-basis: 170px;
+}
+
+.boxB {
+  position: relative;
+  display: block;
+  text-align: right;
 }
 
 .containerDown {
