@@ -147,6 +147,14 @@ li {
   text-align: center;
 }
 
+
+/*Carousel*/
+
+/*.carousel {
+  padding-top: 100px;
+}*/
+
+
 /*About*/
 
 #about {
@@ -231,6 +239,7 @@ li {
   font-family: serif;
   font-size: 24px;
 }
+
 
 /*3/3 Footer*/
 
