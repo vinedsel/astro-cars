@@ -160,11 +160,13 @@ li {
   padding-top: 30px;
 }
 
-#form_edit {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
+.th {
+  text-align: center;
+  padding-right: 23px;
+}
+
+td {
+  padding-right: 23px;
 }
 
 

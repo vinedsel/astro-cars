@@ -27,38 +27,48 @@ $(document).ready(function() {
   $(".slide-three").click(function() {
     $("#myCarousel").carousel(2);
   });
+
+  $(".slide-four").click(function() {
+    $("#myCarousel").carousel(3);
+  });
+
+  $(".slide-five").click(function() {
+    $("#myCarousel").carousel(4);
+  });
+
+  $(".slide-six").click(function() {
+    $("#myCarousel").carousel(5);
+  });
+
+  $(".slide-seven").click(function() {
+    $("#myCarousel").carousel(6);
+  });
+
+  $(".slide-eight").click(function() {
+    $("#myCarousel").carousel(7);
+  });
 });
 
 
 // Filling Tables
 
-$(document).ready(function() {
-  $('a').click(function(event) {
-    var id = $(this).parent().parent().attr('id'); //get id of referent tr
-    $('input[name="editvalue"]').attr('id', id); // insert id on input submit
-  });
-
-  $('#form_edit').submit(function(event) {
-    event.preventDefault();
-    id = $('input[name="editvalue"]').attr('id'); // get id of input submit
-    value1 = $('input[name="value1"]').val(); // get value of input text value1
-    value2 = $('input[name="value2"]').val(); // get value of input text value2
-
-    $.ajax({ // Send request
-      type: "POST",
-      url: 'updaterow.php',
-      data: {
-        id: id,
-        value1: value1,
-        value2: value2
-      }, //Values 1 and 2 and Id referent
-      cache: false,
-      success: function(response) {
-        if (response == "success") { // updaterow return "success" or echo "success"
-          $('#1 td:nth-child(1)').text(value1);
-          $('#1 td:nth-child(2)').text(value2);
-        }
-      },
+function makeTable(container, data) {
+  var table = $("<table/>").addClass('CSSTableGenerator');
+  $.each(data, function(rowIndex, r) {
+    var row = $("<tr/>");
+    $.each(r, function(colIndex, c) {
+      row.append($("<t" + (rowIndex == 0 ? "h" : "d") + "/>").text(c));
     });
+    table.append(row);
   });
-});
+  return container.append(table);
+
+  $(document).ready(function() {
+    var data = [
+      ["City 1", "City 2", "City 3"], //headers
+      ["New York", "LA", "Seattle"],
+      ["Paris", "Milan", "Rome"],
+      ["Pittsburg", "Wichita", "Boise"]
+    ]
+    var cityTable = makeTable($(document.body), data);
+  });
