@@ -10,6 +10,7 @@
   background-color: #222629;
 }
 
+
 /*navigation bar*/
 
 .navbar {
@@ -63,6 +64,7 @@ li {
   text-align: center;
 }
 
+
 /*navigation buttons*/
 
 .home>a:hover {
@@ -89,6 +91,7 @@ li {
   text-decoration: none;
 }
 
+
 /*2/3 Main Body Context*/
 
 /*background container*/
@@ -101,6 +104,7 @@ li {
   background-color: #474B4F;
 }
 
+
 /*foreground container*/
 
 .box2 {
@@ -111,6 +115,7 @@ li {
   height: inherit;
   background-color: #88BDBC;
 }
+
 
 /*movie container*/
 
@@ -145,11 +150,13 @@ li {
   text-align: center;
 }
 
+
 /*Carousel*/
 
 #myCarousel {
   margin-bottom: 21px;
 }
+
 
 /*Table*/
 
@@ -178,6 +185,7 @@ td {
   width: 560px;
   text-align: left;
 }
+
 
 /*Contact*/
 
@@ -255,6 +263,7 @@ td {
   font-family: serif;
   font-size: 24px;
 }
+
 
 /*3/3 Footer*/
 
