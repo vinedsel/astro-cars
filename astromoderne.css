@@ -10,7 +10,6 @@
   background-color: #222629;
 }
 
-
 /*navigation bar*/
 
 .navbar {
@@ -64,7 +63,6 @@ li {
   text-align: center;
 }
 
-
 /*navigation buttons*/
 
 .home>a:hover {
@@ -91,7 +89,6 @@ li {
   text-decoration: none;
 }
 
-
 /*2/3 Main Body Context*/
 
 /*background container*/
@@ -104,7 +101,6 @@ li {
   background-color: #474B4F;
 }
 
-
 /*foreground container*/
 
 .box2 {
@@ -116,21 +112,25 @@ li {
   background-color: #88BDBC;
 }
 
-
 /*movie container*/
 
 #w-engine {
   font-family: serif;
-  margin-bottom: 3px;
+  margin-bottom: -3px;
+  font-family: 'Herr Von Muellerhoff', cursive;
+  font-size: 45pt;
+  color: #222629;
 }
 
 #line {
   margin-bottom: 27px;
+  color: #222629;
 }
 
 #line2 {
   margin-top: 12px;
   margin-bottom: 5px;
+  color: #222629;
 }
 
 #w-enginetext {
@@ -139,6 +139,9 @@ li {
   padding-top: 20px;
   width: 560px;
   text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14pt;
+  color: #222629;
 }
 
 .subContainer {
@@ -150,13 +153,11 @@ li {
   text-align: center;
 }
 
-
 /*Carousel*/
 
 #myCarousel {
   margin-bottom: 21px;
 }
-
 
 /*Table*/
 
@@ -176,6 +177,17 @@ td {
   padding-right: 23px;
 }
 
+.value1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14pt;
+  color: #222629;
+}
+
+.value2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14pt;
+  color: #222629;
+}
 
 /*About*/
 
@@ -184,8 +196,10 @@ td {
   display: flex;
   width: 560px;
   text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14pt;
+  color: #222629;
 }
-
 
 /*Contact*/
 
@@ -213,6 +227,9 @@ td {
   position: relative;
   display: block;
   text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12pt;
+  color: #222629;
 }
 
 .contactBoxB {
@@ -227,6 +244,9 @@ td {
   position: relative;
   display: block;
   text-align: right;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12pt;
+  color: #222629;
 }
 
 .containerDown {
@@ -247,6 +267,7 @@ td {
   flex-grow: 10;
   height: 400px;
   text-align: left;
+  color: #222629;
 }
 
 .contactBoxD {
@@ -255,15 +276,38 @@ td {
   justify-content: flex-end;
   flex-basis: 170px;
   text-align: right;
+  color: #222629;
+}
+
+#sales {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14pt;
+  color: #222629;
+}
+
+.name {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12pt;
+  color: #222629;
+}
+
+.number {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12pt;
+  color: #222629;
+}
+
+a {
+  color: #222629;
 }
 
 #legend {
   text-decoration: none;
   text-align: left;
-  font-family: serif;
-  font-size: 24px;
+  font-family: 'Herr Von Muellerhoff', cursive;
+  font-size: 30pt;
+  padding-left: 15px;
 }
-
 
 /*3/3 Footer*/
 
