@@ -81,3 +81,15 @@ function taxFunction(value2) {
     value2 *= .08 ;
 
 };
+
+
+// Loading
+
+$(document).ready(function() {
+
+    setTimeout(function(){
+        $('body').addClass('loaded');
+        $('h1').css('color','#222222');
+    }, 3000);
+
+});
