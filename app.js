@@ -77,31 +77,10 @@ function myFunction() {
 
 // Tax function
 
-// assign all classes and all id's the same for all similar elements for more effective targeting
 
-var value2_1 = document.getElementsByClassName("value2-1").value);
-document.getElementById('valueFin1').innerHTML = taxFunction(valueFin1);
-
-function tax() {
-  document.getElementsByClassName();
-}
-
-function taxFunction() {
-  tax();
-  let finalPrice =
-}
-
-
-
-
-
-// Loading
-
-$(document).ready(function() {
-
-  setTimeout(function() {
-    $('body').addClass('loaded');
-    $('h1').css('color', '#222222');
-  }, 3000);
-
+$('#tableMain').on('click', '.calc', function() {
+  var curRow = $(this).closest("tr");
+  var col1 = curRow.find(".value2").html();
+  var finPrice = col1 * .08;
+  alert('$' + finPrice);
 });
