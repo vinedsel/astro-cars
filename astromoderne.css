@@ -168,11 +168,15 @@ li {
   margin-bottom: 21px;
 }
 
+.carousel-caption {
+  margin-bottom: 20px;
+}
+
 /*Table*/
 
 .table {
   position: relative;
-  display: inline-block;
+  display: flex;
   justify-content: center;
   padding-top: 30px;
 }

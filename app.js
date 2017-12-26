@@ -3,17 +3,7 @@
 
 $(document).ready(function() {
 
-  // Cycles to the previous item
-
-  $(".prev-slide").click(function() {
-    $("#myCarousel").carousel('prev');
-  });
-
-  // Cycles to the next item
-
-  $(".next-slide").click(function() {
-    $("#myCarousel").carousel('next');
-  });
+$("#myCarousel").carousel();
 
   // Cycles the carousel to a particular frame
 
@@ -50,6 +40,18 @@ $(document).ready(function() {
   });
 });
 
+// Cycles to the previous item
+
+$(".prev-slide").click(function() {
+  $("#myCarousel").carousel('prev');
+});
+
+// Cycles to the next item
+
+$(".next-slide").click(function() {
+  $("#myCarousel").carousel('next');
+});
+
 
 // Search Engine
 
@@ -76,7 +78,6 @@ function myFunction() {
 
 
 // Tax function
-
 
 $('#tableMain').on('click', '.calc', function() {
   var curRow = $(this).closest("tr");
