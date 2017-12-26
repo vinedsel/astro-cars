@@ -1,5 +1,6 @@
 // Carousel
 
+
 $(document).ready(function() {
 
   // Cycles to the previous item
@@ -50,46 +51,57 @@ $(document).ready(function() {
 });
 
 
-// Filling Tables - moot
+// Search Engine
 
-// function makeTable(container, data) {
-//   var table = $("<table/>").addClass('CSSTableGenerator');
-//   $.each(data, function(rowIndex, r) {
-//     var row = $("<tr/>");
-//     $.each(r, function(colIndex, c) {
-//       row.append($("<t" + (rowIndex == 0 ? "h" : "d") + "/>").text(c));
-//     });
-//     table.append(row);
-//   });
-//   return container.append(table);
-//
-//   $(document).ready(function() {
-//     var data = [
-//       ["City 1", "City 2", "City 3"], //headers
-//       ["New York", "LA", "Seattle"],
-//       ["Paris", "Milan", "Rome"],
-//       ["Pittsburg", "Wichita", "Boise"]
-//     ]
-//     var cityTable = makeTable($(document.body), data);
-//   });
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByClassName();
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByClassName()[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+
 
 
 // Tax function
 
-function taxFunction(value2) {
-    getElementsByClassName('value2');
-    value2 *= .08 ;
+// assign all classes and all id's the same for all similar elements for more effective targeting
 
-};
+var value2_1 = document.getElementsByClassName("value2-1").value);
+document.getElementById('valueFin1').innerHTML = taxFunction(valueFin1);
+
+function tax() {
+  document.getElementsByClassName();
+}
+
+function taxFunction() {
+  tax();
+  let finalPrice =
+}
+
+
+
 
 
 // Loading
 
 $(document).ready(function() {
 
-    setTimeout(function(){
-        $('body').addClass('loaded');
-        $('h1').css('color','#222222');
-    }, 3000);
+  setTimeout(function() {
+    $('body').addClass('loaded');
+    $('h1').css('color', '#222222');
+  }, 3000);
 
 });

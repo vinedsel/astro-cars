@@ -63,6 +63,15 @@ li {
   text-align: center;
 }
 
+/*Search Field*/
+
+#search {
+  position: relative;
+  display: inline-flex;
+  height: 30px;
+  margin-top: 6px;
+}
+
 /*navigation buttons*/
 
 .home>a:hover {
