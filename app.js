@@ -3,7 +3,7 @@
 
 $(document).ready(function() {
 
-$("#myCarousel").carousel();
+  $("#myCarousel").carousel();
 
   // Cycles the carousel to a particular frame
 
@@ -60,7 +60,7 @@ function myFunction() {
   var input, filter, ul, li, a, i;
   input = document.getElementById('myInput');
   filter = input.value.toUpperCase();
-  ul = document.getElementById("myUL");
+  ul = document.getElementsByClassName("carousel-inner");
   li = ul.getElementsByClassName();
 
   // Loop through all list items, and hide those who don't match the search query
@@ -79,9 +79,11 @@ function myFunction() {
 
 // Tax function
 
+// assign additional var that will take the final price and add the tax to it...
+
 $('#tableMain').on('click', '.calc', function() {
   var curRow = $(this).closest("tr");
-  var col1 = curRow.find(".value2").html();
+  var col1 = parseInt(curRow.find(".value2").html());
   var finPrice = col1 * .08;
   alert('$' + finPrice);
 });
