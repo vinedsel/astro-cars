@@ -1,56 +1,14 @@
 // Carousel
 
-
 $(document).ready(function() {
-
-  $("#myCarousel").carousel();
-
-  // Cycles the carousel to a particular frame
-
-  $(".single-item").slick(function() {
-    $("#myCarousel").carousel(0);
-  });
-
-  $(".single-item").slick(function() {
-    $("#myCarousel").carousel(1);
-  });
-
-  $(".single-item").slick(function() {
-    $("#myCarousel").carousel(2);
-  });
-
-  $(".single-item").slick(function() {
-    $("#myCarousel").carousel(3);
-  });
-
-  $(".single-item").slick(function() {
-    $("#myCarousel").carousel(4);
-  });
-
-  $(".slide-six").slick(function() {
-    $("#myCarousel").carousel(5);
-  });
-
-  $(".single-item").slick(function() {
-    $("#myCarousel").carousel(6);
-  });
-
-  $(".single-item").slick(function() {
-    $("#myCarousel").carousel(7);
+  $(".showcase").slick({
+    dots: true,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 1000
   });
 });
 
-// Cycles to the previous item
-
-$(".prev-slide").slick(function() {
-  $("#myCarousel").carousel('prev');
-});
-
-// Cycles to the next item
-
-$(".next-slide").slick(function() {
-  $("#myCarousel").carousel('next');
-});
 
 
 // Search Engine
@@ -81,7 +39,7 @@ function myFunction() {
 
 // assign additional var that will take the final price and add the tax to it...
 
-$('#tableMain').on('slick', '.calc', function() {
+$('#tableMain').on('click', '.calc', function() {
   var curRow = $(this).closest("tr");
   var col1 = parseInt(curRow.find(".value2").html());
   var finPrice = col1 * .08;

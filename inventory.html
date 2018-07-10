@@ -5,15 +5,59 @@
   <meta charset="utf-8">
   <title>Astro-Moderne | Inventory</title>
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
   <!-- skin -->
   <link rel="stylesheet" href="astromoderne.css">
   <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css">
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <style type="text/css">
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* * {
+      box-sizing: border-box;
+    } */
+
+
+    .slider {
+      width: 50%;
+      margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+  </style>
 </head>
 
 <body>
@@ -78,162 +122,133 @@
 
         <!-- Carousel -->
 
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-          <!-- Carousel indicators -->
-
-          <!-- <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active" class="atmos"></li>
-            <li data-target="#myCarousel" data-slide-to="1" class="cheetah"></li>
-            <li data-target="#myCarousel" data-slide-to="2" class="delta"></li>
-            <li data-target="#myCarousel" data-slide-to="3" class="galaxy"></li>
-            <li data-target="#myCarousel" data-slide-to="4" class="venus"></li>
-            <li data-target="#myCarousel" data-slide-to="5" class="lynx"></li>
-            <li data-target="#myCarousel" data-slide-to="6" class="mark3"></li>
-            <li data-target="#myCarousel" data-slide-to="7" class="mooncruiser"></li>
-          </ol> -->
+        <div>
 
           <!-- Carousel items -->
 
-          <div class="carousel-inner" >
-
-            <div class="item active">
-              <img src="images/Atmos.jpg" alt="First slide" class="slide-one" width="564" height="412">
-              <div class="carousel-caption">The Atmos</div>
+          <div class="showcase">
+            <div>
+              <img src="images/Atmos.jpg" width="564" height="376" alt="slider image">
             </div>
-
-            <div class="item">
-              <img src="images/cheetah.jpg" alt="Second slide" class="slide-two" width="564" height="412">
-              <div class="carousel-caption">The Cheetah</div>
+            <div>
+              <img src="images/cheetah.jpg" width="564" height="376" alt="slider image">
             </div>
-
-            <div class="item">
-              <img src="images/delta08.jpg" alt="Third slide" class="slide-three" width="564" height="412">
-              <div class="carousel-caption">The Delta 08</div>
+            <div>
+              <img src="images/delta08.jpg" width="564" height="376" alt="slider image">
             </div>
-
-            <div class="item">
-              <img src="images/galaxy10.jpg" alt="Fourth slide" class="slide-four" width="564" height="412">
-              <div class="carousel-caption">The Galaxy 10</div>
+            <div>
+              <img src="images/galaxy10.jpg" width="564" height="376" alt="slider image">
             </div>
-
-            <div class="item">
-              <img src="images/venus.jpg" alt="Fifth slide" class="slide-five" width="564" height="412">
-              <div class="carousel-caption">The Venus</div>
+            <div>
+              <img src="images/lynx.jpg" width="564" height="376" alt="slider image">
             </div>
-
-            <div class="item">
-              <img src="images/lynx.jpg" alt="Sixth slide" class="slide-six" width="564" height="412">
-              <div class="carousel-caption">The Lynx</div>
+            <div>
+              <img src="images/mark3.jpg" width="564" height="376" alt="slider image">
             </div>
-
-            <div class="item">
-              <img src="images/mark3.jpg" alt="Seventh slide" class="slide-seven" width="564" height="412">
-              <div class="carousel-caption">The Mark 3</div>
+            <div>
+              <img src="images/mooncruiser.jpg" width="564" height="376" alt="slider image">
             </div>
-
-            <div class="item">
-              <img src="images/mooncruiser.jpg" alt="Eighth slide" class="slide-eight" width="564" height="412">
-              <div class="carousel-caption">The Moon Cruiser</div>
+            <div>
+              <img src="images/venus.jpg" width="564" height="376" alt="slider image">
             </div>
           </div>
 
+
           <!-- Carousel nav -->
 
-          <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">&lsaquo;</span></a>
+          <!-- <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">&lsaquo;</span></a>
 
           <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only>&rsaquo;</span></a>
         </div>
+      </div> -->
+
+          <!-- Carousel nav -->
+
+
+
+        </div>
+
+        <p id="bottomLine">________________________________</p>
+
+        <!-- Price table -->
+
+        <div class="table">
+          <table id="tableMain">
+            <thead>
+              <tr>
+                <th id="model" class="th"><span>Car Model</span></th>
+                <th></th>
+                <th id="price" class="th"><span>Price</span></th>
+                <th></th>
+                <th id="priceTax" class="th"><span>Full Price (with tax)</span></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="1" class="atmos">
+                <td class="value1">The Atmos</td>
+                <td></td>
+                <td>$<span class="value2">122000.00</span></td>
+                <td></td>
+                <td><button type="button" class="calc" onclick="taxFunction()">See Price</button></td>
+              </tr>
+              <tr id="2" class="cheetah">
+                <td class="value1">The Cheetah</td>
+                <td></td>
+                <td>$<span class="value2">134000.00</span></td>
+                <td></td>
+                <td><button type="button" class="calc" onclick="taxFunction()">See Price</button></td>
+              </tr>
+              <tr id="3" class="delta">
+                <td class="value1">Delta 08</td>
+                <td></td>
+                <td>$<span class="value2">117000.00</span></td>
+                <td></td>
+                <td><button type="button" class="calc" onclick="taxFunction()">See Price</button></td>
+              </tr>
+              <tr id="4" class="galaxy">
+                <td class="value1">Galaxy 10</td>
+                <td></td>
+                <td>$<span class="value2">125000.00</span></td>
+                <td></td>
+                <td><button type="button" class="calc" onclick="taxFunction()">See Price</button></td>
+              </tr>
+              <tr id="5" class="lynx">
+                <td class="value1">The Lynx</td>
+                <td></td>
+                <td>$<span class="value2">110000.00</span></td>
+                <td></td>
+                <td><button type="button" class="calc" onclick="taxFunction()">See Price</button></td>
+              </tr>
+              <tr id="6" class="mark3">
+                <td class="value1">The Mark 3</td>
+                <td></td>
+                <td>$<span class="value2">134000.00</span></td>
+                <td></td>
+                <td><button type="button" class="calc" onclick="taxFunction()">See Price</button></td>
+              </tr>
+              <tr id="7" class="mooncruiser">
+                <td class="value1">The Mooncruiser</td>
+                <td></td>
+                <td>$<span class="value2">102000.00</span></td>
+                <td></td>
+                <td><button type="button" class="calc" onclick="taxFunction()">See Price</button></td>
+              </tr>
+              <tr id="8" class="venus">
+                <td class="value1">The Venus</td>
+                <td></td>
+                <td>$<span class="value2">112000.00</span></td>
+                <td></td>
+                <td><button type="button" class="calc" onclick="taxFunction()">See Price</button></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
       </div>
 
-      <!-- Carousel nav -->
-
-      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-
     </div>
-
-    <p id="bottomLine">________________________________</p>
-
-    <!-- Price table -->
-
-    <div class="table">
-      <table id="tableMain">
-        <thead>
-          <tr>
-            <th id="model" class="th"><span>Car Model</span></th>
-            <th></th>
-            <th id="price" class="th"><span>Price</span></th>
-            <th></th>
-            <th id="priceTax" class="th"><span>Full Price (with tax)</span></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr id="1" class="atmos">
-            <td class="value1">The Atmos</td>
-            <td></td>
-            <td>$<span class="value2">122000.00</span></td>
-            <td></td>
-            <td><button type="button" class="calc" onclick="taxFunction()">See Price</button></td>
-          </tr>
-          <tr id="2" class="cheetah">
-            <td class="value1">The Cheetah</td>
-            <td></td>
-            <td>$<span class="value2">134000.00</span></td>
-            <td></td>
-            <td><button type="button" class="calc" onclick="taxFunction()">See Price</button></td>
-          </tr>
-          <tr id="3" class="delta">
-            <td class="value1">Delta 08</td>
-            <td></td>
-            <td>$<span class="value2">117000.00</span></td>
-            <td></td>
-            <td><button type="button" class="calc" onclick="taxFunction()">See Price</button></td>
-          </tr>
-          <tr id="4" class="galaxy">
-            <td class="value1">Galaxy 10</td>
-            <td></td>
-            <td>$<span class="value2">125000.00</span></td>
-            <td></td>
-            <td><button type="button" class="calc" onclick="taxFunction()">See Price</button></td>
-          </tr>
-          <tr id="5" class="lynx">
-            <td class="value1">The Lynx</td>
-            <td></td>
-            <td>$<span class="value2">110000.00</span></td>
-            <td></td>
-            <td><button type="button" class="calc" onclick="taxFunction()">See Price</button></td>
-          </tr>
-          <tr id="6" class="mark3">
-            <td class="value1">The Mark 3</td>
-            <td></td>
-            <td>$<span class="value2">134000.00</span></td>
-            <td></td>
-            <td><button type="button" class="calc" onclick="taxFunction()">See Price</button></td>
-          </tr>
-          <tr id="7" class="mooncruiser">
-            <td class="value1">The Mooncruiser</td>
-            <td></td>
-            <td>$<span class="value2">102000.00</span></td>
-            <td></td>
-            <td><button type="button" class="calc" onclick="taxFunction()">See Price</button></td>
-          </tr>
-          <tr id="8" class="venus">
-            <td class="value1">The Venus</td>
-            <td></td>
-            <td>$<span class="value2">112000.00</span></td>
-            <td></td>
-            <td><button type="button" class="calc" onclick="taxFunction()">See Price</button></td>
-          </tr>
-        </tbody>
-      </table>
-
-    </div>
-
-  </div>
-
-  </div>
   </div>
 
   <!-- 3/3 Footer -->
@@ -316,11 +331,12 @@
 
 
   <!-- scripts -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <!-- <script src="node_modules/bootstrap/js/carousel.js" type="text/javascript"></script> -->
+  <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="app.js" type="text/javascript"></script>
   <script src="loader.js" type="text/javascript"></script>
+  <script type="text/javascript" src="slick.js">
+  </script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
