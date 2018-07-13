@@ -185,11 +185,11 @@ li {
 }
 
 .slideCap {
-  te
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 #bottomLine {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 /*Table*/
