@@ -164,12 +164,32 @@ li {
 
 /*Carousel*/
 
-#myCarousel {
-  margin-bottom: 21px;
+#carousel {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  width: 560px;
+  height: 400px;
+  top: -140px;
+  bottom: 150px;
+}
+
+.showcase {
+  position: absolute;
+  justify-content: center;
+  margin-bottom: 50px;
+  width: 100%;
+  /* height: 100px; */
+  top: 150px;
 }
 
 .carousel-caption {
   margin-bottom: 20px;
+}
+
+#bottomLine {
+  margin-top: 40px;
 }
 
 /*Table*/
