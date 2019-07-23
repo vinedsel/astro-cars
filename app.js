@@ -1,6 +1,6 @@
 // Carousel
 
-$(document).ready(function() {
+$(document).ready(function(){
   $(".showcase").slick({
     dots: true,
     arrows: true,
