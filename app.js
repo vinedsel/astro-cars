@@ -42,7 +42,7 @@ function myFunction() {
 $('#tableMain').on('click', '.calc', function() {
   var curRow = $(this).closest("tr");
   var col1 = parseInt(curRow.find(".value2").html());
-  var finPrice = col1 * .08;
+  var finPrice = col1 * '.08';
   var combPrice = col1 + finPrice;
   alert('$' + combPrice + '.00');
 });
